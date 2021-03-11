@@ -280,6 +280,12 @@ img {
     padding: 60px 0;
     margin: 0;
 }
+.footer .container {
+    display: flex;
+}
+.footer-em {
+    margin: 0 70px 0 0;
+}
 .footer-em > a {
     padding: 0;
 }
@@ -305,5 +311,11 @@ img {
 .footer a:hover {
     color: var(--ad-hover-text);
     cursor: pointer;
+}
+.footer-join {
+    color: var(--on-back-text);
+}
+.footer-join > p {
+    margin: 0;
 }
 
