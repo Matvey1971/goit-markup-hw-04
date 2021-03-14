@@ -87,24 +87,25 @@ img {
     color: var(--ad-hover-text);
     cursor: pointer;
 }
+.header-icon-text svg {
+    display: block;
+}
 .header-icon-text {
     display: flex;
     align-items: center;
 }
+.header-icon-text:hover {
+    color: var(--ad-hover-text);
+}
+.header-icon-text svg:hover {
+    fill: var(--ad-hover-text);
+}
 .icon-envelope {
     width: 16px;
-}
-.icon-envelope:hover {
-    fill: var(--ad-hover-text);
 }
 .icon-phone {
     width: 10px;
 }
-.icon-phone:hover {
-    fill: var(--ad-hover-text);
-    cursor: pointer;
-}
-/* секция ЭФФЕКТИВНЫЕ РЕШЕНИЯ */
 .ef-solutions,
 .footer {
     background-color: var(--back-main);
@@ -165,6 +166,25 @@ img {
     margin: 0;
     line-height: 1.8;
     letter-spacing: 0.03em;
+}
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronavt {
+    width: 70px;
+    height: 70px;
+}
+.edge-icon svg {  
+    box-sizing: content-box ;
+    display: block;
+    padding: 25px 100px;
+    fill: var(--main-text);
+}
+.edge-icon-bg {
+    background-color: var(--back-ad-main);
+    margin-bottom: 30px;
+
+
 }
 /* секция ЧЕМ МЫ ЗАНИМАЕМСЯ */
 .we-doing {
@@ -240,7 +260,7 @@ img {
 .social-icon li:hover {
     background-color: var(--back-ad-hover);
 }
-.icon-team:hover {
+.social-icon svg:hover {
     fill: var(--on-back-text);
 }
 /* секция ПОСТОЯННЫЕ КЛИЕНТЫ */
@@ -255,6 +275,76 @@ img {
     letter-spacing: 0.03em;
     line-height: 1.18;
     margin: 0 0 50px 0;
+}
+.clients {
+    display: flex;
+    justify-content: space-between;
+}
+.client {
+    width: 170px;
+    border: 1px solid var(--social-icon-main);
+    border-radius: 4px;
+}
+.client-yaco svg {
+    box-sizing: content-box ;
+    display: block;
+    padding: 20px 63px;
+}
+.icon-yaco {
+    width: 44px;
+    height: 50px;
+}
+.client-tagline svg {
+    box-sizing: content-box ;
+    display: block;
+    padding: 19px 65px;
+}
+.icon-tagline {
+    width: 40px;
+    height: 52px;
+}
+.client-company svg {
+    box-sizing: content-box ;
+    display: block;
+    padding: 24px 64px;
+}
+.icon-company {
+    width: 42px;
+    height: 42px;
+}
+.client-foster svg {
+    box-sizing: content-box ;
+    display: block;
+    padding: 24px 45px;
+}
+.icon-foster {
+    width: 80px;
+    height: 42px;
+}
+.client-brand svg {
+    box-sizing: content-box ;
+    display: block;
+    padding: 22px 55px;
+}
+.icon-brand {
+    width: 60px;
+    height: 46px;
+
+}
+.client-companytl svg {
+    box-sizing: content-box ;
+    display: block;
+    padding: 22px 41px;
+}
+.icon-companytl {
+    width: 88px;
+    height: 46px;
+}
+.client svg:hover {
+    fill: var(--back-ad-hover);
+}
+.client:hover {
+    border: 1px solid var(--back-ad-hover);
 }
 
 /* ПОРТФОЛИО */
