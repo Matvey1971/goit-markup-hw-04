@@ -106,10 +106,11 @@ img {
 .icon-phone {
     width: 10px;
 }
-.ef-solutions,
-.footer {
-    background-color: var(--back-main);
-    padding: 200px 0;
+.ef-solutions {
+    background-image: linear-gradient(
+        var(--gradient-op10) 70%, var(--back-team)),
+        url(../images/main.jpg);
+        padding: 200px 0;
 }
 .solutions {
     display: flex;
@@ -375,6 +376,7 @@ img {
 .btns:hover {
     background-color: var(--back-ad-hover);
     color: var(--on-back-text);
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
 }
 .view {
     display: flex;
@@ -390,6 +392,9 @@ img {
     border: 1px solid var(--line-view);
     margin-bottom: 30px;
 }
+.view li:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 .view h3 {
     color: var(--main-text);
     font-size: 18px;
@@ -404,6 +409,7 @@ img {
 
 /* секция FOOTER */
 .footer {
+    background-color: var(--back-main);
     padding: 60px 0;
     margin: 0;
 }
