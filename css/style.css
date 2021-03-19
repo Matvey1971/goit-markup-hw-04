@@ -44,12 +44,12 @@ img {
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
-.header-nav > a,
-.footer-em > a {
+.header-nav > a {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    font-weight: bold;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .header-nav-list {
     align-items: center;
@@ -59,6 +59,7 @@ img {
     display: block;
     color: var(--main-text);
     font-size: 14px;
+    font-weight: 500;
     padding-top: 32px;
     padding-bottom: 32px;
     letter-spacing: 0.02em;
@@ -74,44 +75,46 @@ img {
     color: var(--ad-hover-text);
 }
 .header-nav-contacts a {
-    display: block;
+    display: flex;
     color: var(--ad-main-text);
     font-size: 14px;
+    font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.2;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-left: 10px;
+    align-items: center;
 }
-.header a:hover {
+.header a:hover, .header a:focus {
     color: var(--ad-hover-text);
     cursor: pointer;
 }
 .header-icon-text svg {
-    display: block;
+    display: flex;
 }
 .header-icon-text {
     display: flex;
     align-items: center;
 }
-.header-icon-text:hover {
-    color: var(--ad-hover-text);
-}
-.header-icon-text svg:hover {
-    fill: var(--ad-hover-text);
-}
 .icon-envelope {
     width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 .icon-phone {
     width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
 }
+/* --ЭФФЕКТИВНЫЕ РЕШЕНИЯ-- */
+
 .ef-solutions {
-    background-image: linear-gradient(
-        var(--gradient-op10) 70%, var(--back-team)),
-        url(../images/main.jpg);
-        padding: 200px 0;
+    background-image: linear-gradient(to bottom, var(--back-main-op40), var(--back-main-op40)), url(../images/main.jpg);
+    padding: 200px 0;
 }
+
 .solutions {
     display: flex;
     flex-direction: column;
@@ -138,7 +141,7 @@ img {
     border-radius: 5px;
     border: none;
 }
-.btn:hover {
+.btn:hover, .btn:focus {
     cursor: pointer;
 }
 /* секция НАШИ ПРЕИМУЩЕСТВА */
@@ -155,6 +158,7 @@ img {
 .edge h3 {
     text-transform: uppercase;
     font-size: 14px;
+    font-weight: bold;
     color: var(--main-text);
     margin: 0 0 10px 0;
     line-height: 1.2;
@@ -192,10 +196,11 @@ img {
     padding-bottom: 94px;
 }
 .we-doing h2 {
-    font-size: 34px;
+    font-size: 36px;
+    font-weight: bold;
     color: var(--main-text);
     text-align: center;
-    line-height: 1.21;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     margin: 0;
     margin-bottom: 50px;
@@ -216,6 +221,7 @@ img {
 .sec-team h2 {
     color: var(--main-text);
     font-size: 36px;
+    font-weight: bold;
     text-align: center;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -229,6 +235,7 @@ img {
 .our-team h3 {
     color: var(--main-text);
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.03em;
     margin: 0 0 10px 0;
@@ -237,12 +244,13 @@ img {
     color: var(--ad-main-text);
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin: 0;
+    margin: 16px 0;
 }
 .our-team > li {
     width: 270px;
     background-color: var(--back-team);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 0 0 4px 4px;
 }
 .team-card-text {
     text-align: center;
@@ -250,7 +258,7 @@ img {
 }
 .social-icon {
     display: flex;
-    padding: 16px 30px 0px 30px;
+    justify-content: center;
 }
 .social-icon li {
     width: 44px;
@@ -258,10 +266,10 @@ img {
     border-radius: 50%;
     margin: 0 5px;
 }
-.social-icon li:hover {
+.social-icon li:hover, .social-icon li:focus {
     background-color: var(--back-ad-hover);
 }
-.social-icon svg:hover {
+.social-icon svg:hover, .social-icon svg:focus {
     fill: var(--on-back-text);
 }
 /* секция ПОСТОЯННЫЕ КЛИЕНТЫ */
@@ -282,77 +290,53 @@ img {
     justify-content: space-between;
 }
 .client {
+    display: flex;
+    justify-content: center;
     width: 170px;
+    height: 90px;
     border: 1px solid var(--social-icon-main);
     border-radius: 4px;
 }
-.client-yaco svg {
-    box-sizing: content-box ;
-    display: block;
-    padding: 20px 63px;
+.client-svg {
+    display: flex;
+    align-items: center;
 }
 .icon-yaco {
     width: 44px;
     height: 50px;
 }
-.client-tagline svg {
-    box-sizing: content-box ;
-    display: block;
-    padding: 19px 65px;
-}
 .icon-tagline {
     width: 40px;
     height: 52px;
-}
-.client-company svg {
-    box-sizing: content-box ;
-    display: block;
-    padding: 24px 64px;
 }
 .icon-company {
     width: 42px;
     height: 42px;
 }
-.client-foster svg {
-    box-sizing: content-box ;
-    display: block;
-    padding: 24px 45px;
-}
 .icon-foster {
     width: 80px;
     height: 42px;
-}
-.client-brand svg {
-    box-sizing: content-box ;
-    display: block;
-    padding: 22px 55px;
 }
 .icon-brand {
     width: 60px;
     height: 46px;
 
 }
-.client-companytl svg {
-    box-sizing: content-box ;
-    display: block;
-    padding: 22px 41px;
-}
 .icon-companytl {
     width: 88px;
     height: 46px;
 }
-.client svg:hover {
+.client svg:hover, .client svg:focus  {
     fill: var(--back-ad-hover);
 }
 .client:hover {
     border: 1px solid var(--back-ad-hover);
 }
-
 /* ПОРТФОЛИО */
 .sec-view {
     padding: 94px 0 64px 0;
 }
-.sec-view li:hover {
+.sec-view li:hover, .sec-view li:focus {
     cursor: pointer;
 }
 .tools {
@@ -373,10 +357,10 @@ img {
     border: none;
     cursor: pointer;
 }
-.btns:hover {
+.btns:hover, .btns:focus {
     background-color: var(--back-ad-hover);
     color: var(--on-back-text);
-    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 4px 4px 2px var(--shadow-main);
 }
 .view {
     display: flex;
@@ -392,8 +376,8 @@ img {
     border: 1px solid var(--line-view);
     margin-bottom: 30px;
 }
-.view li:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.view li:hover, .view li:focus {
+    box-shadow: 0 4px 8px 0 var(--shadow-main);
 }
 .view h3 {
     color: var(--main-text);
@@ -420,7 +404,11 @@ img {
     margin: 0 70px 0 0;
 }
 .footer-em > a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
     padding: 0;
+
 }
 .emblem-footer {
     color: var(--on-back-text);
@@ -441,7 +429,7 @@ img {
     line-height: 1.5;
     margin: 0 0 9px 0;
 }
-.footer a:hover {
+.footer a:hover, .footer a:focus {
     color: var(--ad-hover-text);
     cursor: pointer;
 }
@@ -450,7 +438,7 @@ img {
 }
 .footer-join > p {
     margin: 0;
-    padding-left: 5px;
+    padding: 12px 0 20px 5px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -458,7 +446,6 @@ img {
 }
 .footer .social-icon {
     width: 206px;
-    padding: 20px 0 0 0;
 }
 .footer-social-icon-a {
     display: flex;
@@ -466,7 +453,7 @@ img {
     background-color: var(--social-icon-ad-main);
     border-radius: 50%;
 }
-.footer-social-icon-a:hover {
+.footer-social-icon-a:hover, .footer-social-icon-a:focus {
     background-color: var(--back-ad-hover);
 }
 .icon-f {

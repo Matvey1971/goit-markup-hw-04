@@ -5,7 +5,9 @@
     --on-back-text-op60: rgba(255, 255, 255, 0.6);
     --on-back-text: rgba(255, 255, 255, 1);
     --emblem-text: rgba(0,0,0,1);
+    --shadow-main: rgba(0,0,0,0.2);
     --back-main: rgba(47, 48, 58, 1);
+    --back-main-op40: rgba(47, 48, 58, 0.4);
     --back-ad-main: rgba(245, 244, 250, 1);
     --back-ad-hover: rgba(33, 150, 243, 1);
     --back-team: rgba(255, 255, 255, 1);
