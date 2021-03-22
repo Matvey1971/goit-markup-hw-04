@@ -112,7 +112,13 @@ img {
 
 .ef-solutions {
     background-image: linear-gradient(to bottom, var(--back-main-op40), var(--back-main-op40)), url(../images/main.jpg);
-    padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
 }
 
 .solutions {
