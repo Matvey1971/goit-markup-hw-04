@@ -120,7 +120,6 @@ img {
     display: flex;
     align-items: center;
 }
-
 .solutions {
     display: flex;
     flex-direction: column;
@@ -185,17 +184,14 @@ img {
     width: 70px;
     height: 70px;
 }
-.edge-icon svg {  
-    box-sizing: content-box ;
-    display: block;
-    padding: 25px 100px;
-    fill: var(--main-text);
-}
 .edge-icon-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--back-ad-main);
+    fill: var(--main-text);
     margin-bottom: 30px;
-
-
+    height: 120px;
 }
 /* секция ЧЕМ МЫ ЗАНИМАЕМСЯ */
 .we-doing {
@@ -250,7 +246,7 @@ img {
     color: var(--ad-main-text);
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin: 16px 0;
+    margin: 0 0 16px 0;
 }
 .our-team > li {
     width: 270px;
@@ -269,14 +265,18 @@ img {
 .social-icon li {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     margin: 0 5px;
 }
-.social-icon li:hover, .social-icon li:focus {
+.social-icon li:hover {
     background-color: var(--back-ad-hover);
+    border-radius: 50%;
+    cursor: pointer;
 }
-.social-icon svg:hover, .social-icon svg:focus {
+.social-icon li:hover .icon-team {
     fill: var(--on-back-text);
+}
+.social-icon li:focus {
+    background-color: var(--back-ad-hover);
 }
 /* секция ПОСТОЯННЫЕ КЛИЕНТЫ */
 .const-clients {
@@ -332,11 +332,12 @@ img {
     width: 88px;
     height: 46px;
 }
-.client svg:hover, .client svg:focus  {
-    fill: var(--back-ad-hover);
-}
 .client:hover {
     border: 1px solid var(--back-ad-hover);
+    cursor: pointer;
+}
+.client:hover .icon {
+    fill: var(--back-ad-hover);
 }
 /* ПОРТФОЛИО */
 .sec-view {
@@ -348,13 +349,13 @@ img {
 .tools {
     display: flex;
     justify-content: center;
-}
-.tools li {
     margin-bottom: 50px;
+
 }
 .btns {
     background-color: var(--back-ad-main);
     color: var(--main-text);
+    font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.04em;
     padding: 6px 22px;
@@ -363,7 +364,7 @@ img {
     border: none;
     cursor: pointer;
 }
-.btns:hover, .btns:focus {
+.btns:hover, .btns:focus    {
     background-color: var(--back-ad-hover);
     color: var(--on-back-text);
     box-shadow: 2px 4px 4px 2px var(--shadow-main);
@@ -375,14 +376,17 @@ img {
     margin: 0;
 }
 .view-card-text {
-    padding: 20px 0 20px 24px;
+    padding: 20px 24px 20px 24px;
 }
 .view li {
     width: 370px;
     border: 1px solid var(--line-view);
     margin-bottom: 30px;
 }
-.view li:hover, .view li:focus {
+.view li:hover {
+    box-shadow: 0 4px 8px 0 var(--shadow-main);
+}
+.view li:focus {
     box-shadow: 0 4px 8px 0 var(--shadow-main);
 }
 .view h3 {
@@ -396,7 +400,6 @@ img {
     line-height: 1.9;
     margin: 0;
 }
-
 /* секция FOOTER */
 .footer {
     background-color: var(--back-main);
@@ -441,10 +444,10 @@ img {
 }
 .footer-join {
     color: var(--on-back-text);
+    padding: 12px 0 0 5px;
 }
 .footer-join > p {
-    margin: 0;
-    padding: 12px 0 20px 5px;
+    margin: 0 0 20px 0;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
