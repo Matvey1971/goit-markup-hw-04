@@ -396,7 +396,7 @@ img {
 .view li:hover {
     box-shadow: 0 4px 8px 0 var(--shadow-main);
 }
-.view-a:focus a {
+.view a:focus {
     box-shadow: 0 4px 8px 0 var(--shadow-main);
 }
 .view h3 {
