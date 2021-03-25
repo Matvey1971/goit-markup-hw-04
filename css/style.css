@@ -8,6 +8,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+a {
+    display: block;
+}
 .icon {
     display: inline-block;
     width: 20px;
@@ -397,6 +400,7 @@ img {
     box-shadow: 0 4px 8px 0 var(--shadow-main);
 }
 .view-a:focus {
+    outline: none;
     box-shadow: 0 4px 8px 0 var(--shadow-main);
 }
 .view h3 {
