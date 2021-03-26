@@ -114,14 +114,15 @@ a {
 /* --ЭФФЕКТИВНЫЕ РЕШЕНИЯ-- */
 
 .ef-solutions {
+    display: flex;
+    align-items: center;
     background-image: linear-gradient(to bottom, var(--back-main-op40), var(--back-main-op40)), url(../images/main.jpg);
     max-width: 1600px;
+    margin: 0 auto;
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
+    background-position-x: center;
 }
 .solutions {
     display: flex;
@@ -372,7 +373,7 @@ a {
     line-height: 1.6;
     letter-spacing: 0.04em;
     padding: 6px 22px;
-    margin: 0 4px;
+    margin: 0 8px 0 0;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -400,7 +401,6 @@ a {
     box-shadow: 0 4px 8px 0 var(--shadow-main);
 }
 .view-a:focus {
-    outline: none;
     box-shadow: 0 4px 8px 0 var(--shadow-main);
 }
 .view h3 {
@@ -422,9 +422,11 @@ a {
 }
 .footer .container {
     display: flex;
+
 }
 .footer-em {
     margin: 0 70px 0 0;
+    align-self: baseline;
 }
 .footer-em > a {
     font-family: 'Raleway', sans-serif;
@@ -458,7 +460,8 @@ a {
 }
 .footer-join {
     color: var(--on-back-text);
-    padding: 12px 0 0 5px;
+    align-self: baseline;
+
 }
 .footer-join > p {
     margin: 0 0 20px 0;
@@ -474,6 +477,9 @@ a {
 .footer-join a {
     display: flex;
     justify-content: center;
+}
+.footer-join li {
+    margin: 0 10px 0 0;
 }
 .footer-social-icon-a:hover, .footer-social-icon-a:focus {
     background-color: var(--back-ad-hover);
